@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Low-Level Data Structures Tutorial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Low-Level Data Structures</h1>
+    <p>Learn about linked lists, stacks, and queues</p>
+    <h5>Start by clicking the 'Append' button.</h5>
+  </header>
+
+  <main>
+    <h1>Simple</h1>  
+    <section id="linked-list">
+      <h2>Linked List</h2>
+      <p>A linked list is a data structure consisting of nodes, where each node contains data and a reference to the next node.</p>
+      <div id="linkedList" class="visualization"></div>
+      <div class="controls">
+        <button onclick="appendNode()">Append</button>
+        <button onclick="removeNode()">Remove</button>
+      </div>
+    </section>
+
+    <section id="stack">
+      <h2>Stack</h2>
+      <p>A stack is a Last-In-First-Out (LIFO) data structure, where elements are added and removed from the top of the stack.</p>
+      <div id="stackVisualization" class="visualization"></div>
+      <div class="controls">
+        <button onclick="pushElement()">Push</button>
+        <button onclick="popElement()">Pop</button>
+      </div>
+    </section>
+
+    <section id="queue">
+      <h2>Queue</h2>
+      <p>A queue is a First-In-First-Out (FIFO) data structure, where elements are added to the rear and removed from the front of the queue.</p>
+      <div id="queueVisualization" class="visualization"></div>
+      <div class="controls">
+        <button onclick="enqueueElement()">Enqueue</button>
+        <button onclick="dequeueElement()">Dequeue</button>
+      </div>
+    </section>
+    <h1>Complex</h1>
+    <section id="binary-search-tree">
+        <h2>Binary Search Tree</h2>
+        <p>A binary search tree is a hierarchical data structure where each node has at most two children, and the left subtree contains elements smaller than the node, while the right subtree contains elements larger than the node.</p>
+        <div id="bstVisualization" class="visualization"></div>
+        <div class="controls">
+          <button onclick="insertNode()">Insert</button>
+          <button onclick="removeNode()">Remove</button>
+        </div>
+      </section>
+
+      <section id="graph">
+        <h3>Graph</h3>
+        <p>A graph is a data structure consisting of nodes (vertices) and edges connecting them. Graphs are used to represent relationships and connections between entities.</p>
+        <div id="graphVisualization" class="visualization"></div>
+        <div class="controls">
+          <button onclick="addVertex()">Add Vertex</button>
+          <button onclick="addEdge()">Add Edge</button>
+        </div>
+      </section>
+
+      <section id="trie">
+        <h3>Trie</h3>
+        <p>A trie, also known as a prefix tree, is an efficient data structure for storing and retrieving strings. It is commonly used for tasks like autocomplete, spell checkers, and IP routing tables.</p>
+        <div id="trieVisualization" class="visualization"></div>
+        <div class="controls">
+          <input type="text" id="wordInput" placeholder="Enter a word">
+          <button onclick="insertWord()">Insert</button>
+          <button onclick="searchWord()">Search</button>
+        </div>
+      </section>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+  <script src="stack.js"></script>
+  <script src="queue.js"></script>
+  <script src="bst.js"></script>
+  <script src="graph.js"></script>
+  <script src="trie.js"></script>
+</body>
+</html>
